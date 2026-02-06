@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/weather/:path*",
+      "destination": "https://api.openweathermap.org/data/2.5/:path*"
+    },
+    {
+      "source": "/api/icons/:path*",
+      "destination": "https://openweathermap.org/img/wn/:path*"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
